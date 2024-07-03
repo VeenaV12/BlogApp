@@ -14,7 +14,7 @@ app.use(morgan('dev'))
 app.use(cors())
 
 app.use(cors({
-  origin:['https://blog-app-jppb-jby4yg06x-veena-s-projects.vercel.app'],
+  origin:['https://blog-app-jppb.vercel.app'],
   credentials:true,
   methods:['GET','POST']
 }))
