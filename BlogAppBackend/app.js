@@ -13,6 +13,12 @@ const app = express()
 app.use(morgan('dev'))
 app.use(cors())
 
+app.use(cors({
+  origin:['https://blog-app-eta-one.vercel.app'],
+  credentials:true,
+  methods:['GET','POST']
+}))
+
 app.use('/api', postRoute)
 app.use('/user',userRoute)
 
