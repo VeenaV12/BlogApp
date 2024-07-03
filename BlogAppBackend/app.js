@@ -20,7 +20,7 @@ app.use(cors())
 }))*/
 
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://blog-app-jppb.vercel.app'); // Allow requests from your frontend origin
+  res.setHeader('Access-Control-Allow-Origin', 'https://blog-app-jppb-veena-s-projects.vercel.app/'); // Allow requests from your frontend origin
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE'); // Allow common HTTP methods
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization'); // Allow common headers
   next();
