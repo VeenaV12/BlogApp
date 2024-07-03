@@ -6,7 +6,7 @@ import axiosInstance from '../axiosInterceptor'
 const Blogs = () => {
   const [data,setData] = useState([])
   useEffect(()=>{
-          axiosInstance.get('http://localhost:3000/api/blogs').then((res)=>{
+          axiosInstance.get('https://blog-app-eta-one.vercel.app/api/blogs').then((res)=>{
             setData(res.data)
           })
   },[])

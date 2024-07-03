@@ -12,7 +12,7 @@ const Login = () => {
   })
 
   function capValue(){
-    axios.post('http://localhost:3000/user/login', form).then((res)=>{
+    axios.post('https://blog-app-eta-one.vercel.app/user/login', form).then((res)=>{
       alert(res.data.message)
       if(res.data.token){
       localStorage.setItem('token',res.data.token)

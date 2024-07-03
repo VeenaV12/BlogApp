@@ -17,7 +17,7 @@ const Signup = () => {
       };
 
       function capValue(){
-        axios.post('http://localhost:3000/user/signup', form).then((res)=>{
+        axios.post('https://blog-app-eta-one.vercel.app//user/signup', form).then((res)=>{
           alert('Blog Added!')
         })}
 

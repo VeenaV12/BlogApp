@@ -11,7 +11,7 @@ const AddBlog = () => {
   })
 
   function capValue(){
-        axiosInstance.post('http://localhost:3000/api/add', form).then((res)=>{
+        axiosInstance.post('https://blog-app-eta-one.vercel.app/api/add', form).then((res)=>{
           alert('Blog Added!')
         })
   }
